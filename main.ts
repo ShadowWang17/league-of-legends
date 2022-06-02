@@ -1,1 +1,5 @@
-
+let mySprite = sprites.create(assets.image`The Purple Guy`, SpriteKind.Player)
+controller.moveSprite(mySprite, 100, 100)
+scene.setBackgroundImage(assets.image`Background`)
+tiles.setCurrentTilemap(tilemap`level1`)
+scene.cameraFollowSprite(mySprite)
